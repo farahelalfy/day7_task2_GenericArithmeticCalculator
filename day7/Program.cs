@@ -4,7 +4,7 @@ namespace day7
 {
     public class Calculator<T> where T : struct, IComparable, IFormattable, IConvertible, IComparable<T>, IEquatable<T>
     {
-        public delegate T Operation(T x, T y);
+    
         public Func<T, T, T> Add { get; set; }
         public Func<T, T, T> Subtract { get; set; }
         public Func<T, T, T> Multiply { get; set; }
